@@ -1,0 +1,32 @@
+  235  lsblk
+  236  sudo fdisk /dev/sdb
+  237  sudo fdisk /dev/sdc
+  238  sudo fdisk /dev/sdd
+  239  lsblk
+  240  sudo pvcreate /dev/sdb1
+  241  sudo pvcreagte /dev/sdc1
+  242  sudo pvcreate /dev/sdc1
+  243  sudo pvcreate /dev/sdd1
+  244  sudo pvs
+  245  sudo vgcreate datos /dev/sdb1
+  246  sudo vgextend datos /dev/sdc1
+  247  sudo vgextend datos /dev/sdd1
+  248  sudo vgs
+  249  sudo lvcreate -L 1.9G -n www datos
+  250  sudo lvcreate -L 4G -n salvas datos
+  251  sudo mkfs.ext4 /dev/datos/www
+  252  lsblk
+  253  sudo fdisk /dev/sdb
+  254  sudo fdisk /dev/sdc
+  255  sudo fdisk /dev/sdd
+  256  lsblk
+  257  sudo pvcreate /dev/sdb1
+  258  sudo pvcreate /dev/sdc1
+  259  sudo pvcreate /dev/sdd1
+  260  sudo vgcreate datos /dev/sdb1
+  261  sudo vgextend datos /dev/sdc1
+  262  sudo vgextend datos /dev/sdd1
+  263  sudo lvcreate -L 1G -n www datos
+  264  sudo lvcreate -L 4g -n salvas datos
+  265  sudo lvextend -L +0.9G /dev/datos/www
+  266  history
